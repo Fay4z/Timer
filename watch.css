@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.stopwatch-wrapper{
+    padding: 20px;
+    background-color: black;
+    text-align: center;
+    color: white;
+
+}
+.watch{
+    padding: 30px;
+    border: 1px solid salmon;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.startbtn,.resetbtn,.stopbtn{
+    padding: 10px;
+}
+
+
