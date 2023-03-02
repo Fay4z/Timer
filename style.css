@@ -1,9 +1,10 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 .clock-wrapper{
-    background-color: gray;
+    /* background-color: gray; */
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -11,4 +12,26 @@ body{
 }
 .clock-wrapper p,span{
     font-size: 25px;
+}
+.head-watch{
+    text-align: center;
+    font-size: 50px;
+    border-bottom: 1px solid rgb(170, 161, 161);
+    padding: 10px;
+}
+.desc{
+    padding: 20px;
+    padding-left: 80px;
+}
+.para-watch{
+    font-size: 30px;;
+}
+.desc ul{
+    list-style-type:decimal;
+    padding-left: 350px;
+}
+.desc li{
+    padding: 10px 0px;
+    font-size: 26px;
+    font-weight: bold;
 }

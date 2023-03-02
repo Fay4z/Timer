@@ -1,4 +1,4 @@
-const watch = document.querySelector(".watch");
+const watch = document.querySelector(".watchstop");
 const startbtn = document.querySelector(".startbtn");
 const stopbtn = document.querySelector(".stopbtn");
 const resetbtn = document.querySelector(".resetbtn");
@@ -10,8 +10,8 @@ let elapsedTime = 0;
 let paused = true;
 let interval;
 let hrs = 0;
-let min = 0;
-let sec = 0;
+let minute = 0;
+let second = 0;
 
 
 startbtn.addEventListener("click",(a)=>{
@@ -38,23 +38,22 @@ resetbtn.addEventListener("click",(a)=>{
     elapsedTime = 0;
     interval;
     hrs = 0;
-    min = 0;
-    sec = 0;
-    watch.textContent = "00:00:00";
+    minute = 0;
+    second = 0;
+    watch.textContent = "00 : 00 : 00";
 })
 
 function updateTime(){
     elapsedTime = Date.now() - startTime;
 
-    sec = Math.floor((elapsedTime / 1000) % 60);
-    min = Math.floor((elapsedTime / (1000 * 60)) % 60);
+    second = Math.floor((elapsedTime / 1000) % 60);
+    minute = Math.floor((elapsedTime / (1000 * 60)) % 60);
     hrs = Math.floor((elapsedTime / (1000 * 60 *60)) % 60);
 
     hrs = pad(hrs);
-    min = pad(min);
-    sec = pad(sec);
-
-    watch.textContent = `${hrs}:${min}:${sec}`;
+    minute = pad(minute);
+    second = pad(second);
+    watch.textContent = `${hrs} : ${minute} : ${second}`;
 
     function pad(unit){
         return (("0") + unit).length > 2 ? unit : "0" + unit;

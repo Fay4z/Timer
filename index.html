@@ -11,12 +11,13 @@
     <div class="wrapper">
         <div class="note">
             <h1 class="head-watch">Watch</h1>
-            <p class="para-watch">This is a simple website that displays:</p>
-            <ul>
-                <li class="time">Time and date</li>
-                <li class="stopwatch">Stopwatch</li>
-            </ul>
-
+            <div class="desc">
+                <p class="para-watch">This is a simple website that displays:</p>
+                <ul>
+                    <li class="time-li">Time and date</li>
+                    <li class="stopwatch-li">Stopwatch</li>
+                </ul>
+            </div>
         </div>
         <div class="clock-wrapper">
             <div class="date">
@@ -32,19 +33,19 @@
                 </div>
             </div>
         </div>
-
+        
         <div class="stopwatch-wrapper">
             <h2>Stopwatch</h2>
             <div class="stopwatch">
-                <div class="watch">00 : 00 : 00</div>
+                <div class="watchstop">00 : 00 : 00</div>
             </div>
             <button class="startbtn">Start</button>
             <button class="stopbtn">Stop</button>
             <button class="resetbtn">Reset</button>
         </div>
     </div>
-
-    <script src="timer.js"></script>
-    <script src="stopwatch.js"></script>
+    
+    <script src="timer.js" defer></script>
+    <script src="stopwatch.js" defer></script>
 </body>
 </html>
