@@ -8,35 +8,43 @@
     <title>Timer</title>
 </head>
 <body>
-    <h3>Timer</h3>
+    <div class="wrapper">
+        <div class="note">
+            <h1 class="head-watch">Watch</h1>
+            <p class="para-watch">This is a simple website that displays:</p>
+            <ul>
+                <li class="time">Time and date</li>
+                <li class="stopwatch">Stopwatch</li>
+            </ul>
 
-    <h4>Clock</h4>
-    
-    <div class="clock-wrapper">
-        <div class="date">
-            <p class="fullDate"></p>
         </div>
-        <div class="time">
-            <div class="fullTime">
-                <span class="hour"></span>
-                <span class="colon">:</span>
-                <span class="min"></span>
-                <span class="colon">:</span>
-                <span class="sec"></span>
+        <div class="clock-wrapper">
+            <div class="date">
+                <p class="fullDate"></p>
             </div>
+            <div class="time">
+                <div class="fullTime">
+                    <span class="hour"></span>
+                    <span class="colon">:</span>
+                    <span class="min"></span>
+                    <span class="colon">:</span>
+                    <span class="sec"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="stopwatch-wrapper">
+            <h2>Stopwatch</h2>
+            <div class="stopwatch">
+                <div class="watch">00 : 00 : 00</div>
+            </div>
+            <button class="startbtn">Start</button>
+            <button class="stopbtn">Stop</button>
+            <button class="resetbtn">Reset</button>
         </div>
     </div>
 
     <script src="timer.js"></script>
-    <div class="stopwatch-wrapper">
-        <h2>Stopwatch</h2>
-        <div class="stopwatch">
-            <div class="watch">00 : 00 : 00</div>
-        </div>
-        <button class="startbtn">Start</button>
-        <button class="stopbtn">Stop</button>
-        <button class="resetbtn">Reset</button>
-    </div>
     <script src="stopwatch.js"></script>
 </body>
 </html>
